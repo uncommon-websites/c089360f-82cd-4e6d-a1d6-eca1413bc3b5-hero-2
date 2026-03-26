@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&family=Nunito:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -15,6 +15,8 @@
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
                         serif: ['Newsreader', 'serif'],
+                        rounded: ['Nunito', 'sans-serif'],
+                        script: ['Dancing Script', 'cursive'],
                     },
                     colors: {
                         brand: {
@@ -80,12 +82,12 @@
     <nav class="w-full px-6 md:px-10 py-6 flex items-center justify-between animate-fade-in delay-0 relative z-50">
         <div class="flex items-center gap-12">
             <!-- Logo -->
-            <a href="#" class="font-serif text-[28px] tracking-tight flex items-start text-brand-warmDark leading-none">
+            <a href="#" class="font-script text-[32px] tracking-tight flex items-start text-brand-warmDark leading-none">
                 Sana<span class="font-sans text-[10px] leading-none mt-1 ml-[2px]">™</span>
             </a>
 
             <!-- Desktop Links (Left) -->
-            <div class="hidden lg:flex items-center gap-8 text-[14px] font-medium text-brand-warmDark">
+            <div class="hidden lg:flex items-center gap-8 text-[14px] font-rounded font-medium text-brand-warmDark">
                 <a href="#" class="flex items-center gap-1.5 hover:opacity-70 transition-opacity group">
                     Products 
                     <svg class="w-2.5 h-2.5 text-gray-400 group-hover:text-gray-600 transition-colors mt-[2px]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
@@ -111,10 +113,10 @@
         </div>
 
         <!-- Desktop Links & CTA (Right) -->
-        <div class="hidden lg:flex items-center gap-8 text-[14px] font-medium text-brand-warmDark">
+        <div class="hidden lg:flex items-center gap-8 text-[14px] font-rounded font-medium text-brand-warmDark">
             <a href="#" class="hover:opacity-70 transition-opacity">Mission</a>
             <a href="#" class="hover:opacity-70 transition-opacity">Careers</a>
-            <a href="#" class="bg-brand-ochre text-white px-5 py-2.5 rounded-full text-[14px] hover:opacity-90 transition-all duration-200 active:scale-97">Automate Operations</a>
+            <a href="#" class="bg-brand-ochre text-white px-5 py-2.5 rounded-full text-[14px] font-rounded hover:opacity-90 transition-all duration-200 active:scale-97">Automate Operations</a>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -146,8 +148,8 @@
                         class="w-full h-full object-cover"
                     >
                 </div>
-                <h1 class="font-serif text-[64px] md:text-[96px] lg:text-[120px] leading-[0.9] tracking-[-0.04em] text-brand-warmDark animate-fade-in-up delay-100 text-balance">Transform Your Workflows Into Automated Processes</h1>
-                <h2 class="font-serif text-[64px] md:text-[96px] lg:text-[120px] leading-[0.9] tracking-[-0.04em] text-brand-orange animate-fade-in-up delay-200 text-balance mt-2">AB Climatisation turns undocumented operations into intelligent, automated workflows with real-time data integration for manufacturing teams.</h2>
+                <h1 class="font-rounded text-[40px] md:text-[56px] lg:text-[72px] leading-[1.1] tracking-[-0.02em] text-brand-warmDark animate-fade-in-up delay-100 text-balance font-semibold">Transform Your Workflows Into Automated Processes</h1>
+                <h2 class="font-rounded text-[32px] md:text-[44px] lg:text-[56px] leading-[1.2] tracking-[-0.01em] text-brand-orange animate-fade-in-up delay-200 text-balance mt-4 font-medium">AB Climatisation turns undocumented operations into intelligent, automated workflows with real-time data integration for manufacturing teams.</h2>
             </div>
 
             <!-- Action Row (Buttons & Paragraph) -->
@@ -163,17 +165,17 @@
                 
                 <!-- Buttons -->
                 <div class="flex flex-wrap items-center gap-3 md:gap-4 animate-fade-in-up delay-300">
-                    <a href="#" class="bg-brand-ochre text-white px-6 py-3 rounded-full text-[14px] font-medium hover:opacity-90 transition-all duration-200 active:scale-97">
+                    <a href="#" class="bg-brand-ochre text-white px-6 py-3 rounded-full text-[14px] font-rounded font-medium hover:opacity-90 transition-all duration-200 active:scale-97">
                         Book an intro
                     </a>
-                    <a href="#" class="bg-brand-cream text-brand-warmDark px-6 py-3 rounded-full text-[14px] font-medium hover:bg-[#F0F0DC] transition-all duration-200 active:scale-97">
+                    <a href="#" class="bg-brand-cream text-brand-warmDark px-6 py-3 rounded-full text-[14px] font-rounded font-medium hover:bg-[#F0F0DC] transition-all duration-200 active:scale-97">
                         Find your plan
                     </a>
                 </div>
 
                 <!-- Paragraph -->
-                <p class="max-w-[460px] text-[18px] md:text-[20px] leading-[1.4] text-brand-warmDark animate-fade-in-up delay-300 text-pretty">
-                    Win rates don't rise on grit alone. Sana is the only learning platform with built-in AI coaching so you can train your reps continuously at scale.
+                <p class="max-w-[460px] text-[18px] md:text-[20px] leading-[1.5] text-brand-warmDark animate-fade-in-up delay-300 text-pretty font-rounded">
+                    Win rates don't rise on grit alone. <span class="font-script text-[22px] md:text-[24px] text-brand-orange">Sana</span> is the only learning platform with built-in AI coaching so you can train your reps continuously at scale.
                 </p>
             </div>
 
